@@ -1,9 +1,9 @@
 {
-	"name": "ninelines-template",
+	"name": "chiraq",
 	"version": "2.7.11",
-	"description": "Шаблон для разработки сайтов",
+	"description": "shine",
 	"scripts": {},
-	"author": "Dmitry Artemov <d.artemov@9-lines.com>",
+	"author": "MOI-NIK-3D",
 	"license": "ISC",
 	"devDependencies": {
 		"@babel/core": "7.10.4",
@@ -61,6 +61,7 @@
 	},
 	"dependencies": {
 		"@babel/polyfill": "7.10.4",
+		"bootstrap-4-grid": "3.4.0",
 		"jquery": "3.5.1",
 		"ninelines-ua-parser": "1.1.6",
 		"normalize.css": "8.0.1",

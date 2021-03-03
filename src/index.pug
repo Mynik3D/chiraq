@@ -1,10 +1,13 @@
 extends pug/base
 
 prepend vars
-	//-
-
+	
 append vars
-	//-
+	- title = 'Лампочка';
+
+
+block body-start
+	include header
 
 block content
 	//-

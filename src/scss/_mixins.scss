@@ -2,3 +2,95 @@
 @import "mixins/triangle";
 @import "mixins/helpers";
 @import "mixins/breakpoint";
+
+
+
+
+
+
+
+
+
+
+
+
+$screen-sm-min: 576px;
+
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+$screen-lg-min: 992px;
+
+@mixin sm {
+   @media (min-width: #{$screen-sm-min}) {
+       @content;
+   }
+}
+
+@mixin md {
+   @media (min-width: #{$screen-md-min}) {
+       @content;
+   }
+}
+
+// Extra large devices
+@mixin xl {
+   @media (min-width: #{$screen-xl-min}) {
+       @content;
+   }
+}
+
+@mixin lg {
+   @media (min-width: #{$screen-lg-min}) {
+       @content;
+   }
+}
+
+
+
+
+$small: 320px;
+$smallmin: 480px;
+$medium: 576px;
+$large: 992px;
+/// to view 
+$extral: 1400px;
+$largemin: 768px;
+
+
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: $medium) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $medium ) and (max-width: $large ) { @content; }
+  }
+  @else if $media == small-screens {
+    @media only screen and (min-width: $small ) and (max-width: $smallmin ) { @content; }
+  }
+
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $large) { @content; }
+  }
+  @else if $media == extmin-screens {
+    @media only screen and (min-width: $extral) { @content; }
+  }
+  @else if $media == lgmin-screens {
+    @media only screen and (min-width: $largemin) { @content; }
+
+  }
+ @else if $media == large-small-screens {
+  @media only screen and (min-width: $small ) and (max-width: $largemin ) { @content; }
+ 
+    
+  } 
+  @else if $media == medium-small {
+  @media only screen and (min-width: $small ) and (max-width: $medium ) { @content; } 
+  }
+    @else if $media == small-large {
+    @media only screen and (min-width: $small ) and (max-width: $large ) { @content; }
+  }
+}
