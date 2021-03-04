@@ -4334,40 +4334,43 @@ a {
 
 .header {
   padding-top: 80px; }
-
-.header__logo {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-     -moz-box-orient: horizontal;
-     -moz-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-     -moz-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  .header__logo .link {
-    position: relative; }
-  .header__logo h1 {
-    color: #b69b67;
-    text-align: center;
-    border-top: 1px solid #b69b67;
-    text-transform: uppercase;
-    font-family: 'Playfair Display SC', serif; }
-  .header__logo .logo-span {
-    float: right;
-    color: #b4b4b4;
-    font-size: 30px;
-    text-transform: uppercase;
-    font-family: 'Ubuntu', sans-serif;
-    position: absolute;
-    right: -91px; }
+  .header__logo {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+       -moz-box-orient: horizontal;
+       -moz-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .header__logo .link {
+      position: relative; }
+    .header__logo h1 {
+      color: #b69b67;
+      text-align: center;
+      border-top: 1px solid #b69b67;
+      text-transform: uppercase;
+      font-family: 'Playfair Display SC', serif; }
+    .header__logo .logo-span {
+      float: right;
+      color: #b4b4b4;
+      font-size: 30px;
+      text-transform: uppercase;
+      font-family: 'Ubuntu', sans-serif;
+      position: absolute;
+      right: -91px;
+      z-index: 1; }
+  .header__lamp-logo {
+    display: inline-block;
+    width: 100%; }
 
 /*# sourceMappingURL=main.css.map */
