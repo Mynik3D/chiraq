@@ -64,6 +64,23 @@ a{
 		display: inline-block;
 		width: 100%;
 }
+
+	&__lamp-text{
+		&__head{
+			h1{
+				color: #b69b67;
+				font-family: $font-family-main;
+				text-transform: uppercase;
+				font-weight: normal;
+				letter-spacing: 2px;
+				background: linear-gradient(to right, #303030,#b69b67, #303030);
+			    -webkit-background-clip: text;
+			    -webkit-text-fill-color: transparent;
+
+
+			}
+		}
+	}
 }
 
 
