@@ -1,4 +1,65 @@
-$sprites: ();
+$sprites: (
+	"list3": (
+		normal: (
+			x: 0,
+			y: 0,
+			width: 82,
+			height: 82,
+			image: "sprites.png",
+			total_width: 166,
+			total_height: 114,
+		),
+		retina: (
+			x: 0,
+			y: 0,
+			width: 164,
+			height: 164,
+			image: "sprites@2x.png",
+			total_width: 332,
+			total_height: 228,
+		),
+	),
+	"maper": (
+		normal: (
+			x: 0,
+			y: 84,
+			width: 21,
+			height: 30,
+			image: "sprites.png",
+			total_width: 166,
+			total_height: 114,
+		),
+		retina: (
+			x: 0,
+			y: 168,
+			width: 42,
+			height: 60,
+			image: "sprites@2x.png",
+			total_width: 332,
+			total_height: 228,
+		),
+	),
+	"menu-icon": (
+		normal: (
+			x: 84,
+			y: 0,
+			width: 82,
+			height: 82,
+			image: "sprites.png",
+			total_width: 166,
+			total_height: 114,
+		),
+		retina: (
+			x: 168,
+			y: 0,
+			width: 164,
+			height: 164,
+			image: "sprites@2x.png",
+			total_width: 332,
+			total_height: 228,
+		),
+	),
+);
 
 @each $name in map-keys($sprites) {
 	.sprite-#{$name} {

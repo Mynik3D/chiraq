@@ -1,6 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&display=swap");
+.sprite-list3 {
+  display: inline-block;
+  vertical-align: middle;
+  width: 82px;
+  height: 82px;
+  background: url("../images/sprites.png") 0px 0px/166px 114px no-repeat; }
+  @media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
+    .sprite-list3 {
+      background-image: url("../images/sprites@2x.png"); } }
+
+.sprite-maper {
+  display: inline-block;
+  vertical-align: middle;
+  width: 21px;
+  height: 30px;
+  background: url("../images/sprites.png") 0px -84px/166px 114px no-repeat; }
+  @media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
+    .sprite-maper {
+      background-image: url("../images/sprites@2x.png"); } }
+
+.sprite-menu-icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 82px;
+  height: 82px;
+  background: url("../images/sprites.png") -84px 0px/166px 114px no-repeat; }
+  @media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
+    .sprite-menu-icon {
+      background-image: url("../images/sprites@2x.png"); } }
+
 @font-face {
   src: url("../fonts/Ubuntu-Light.ttf") format("ttf");
   font-family: 'Ubuntu', sans-serif;
@@ -5058,7 +5088,7 @@ a[role="button"]:not([disabled]) {
   clip: rect(0 0 0 0); }
 
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   background: #303030; }
 
 h1 {
@@ -5071,6 +5101,24 @@ a {
 
 .header {
   padding-top: 80px; }
+  .header__holder {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .header__logo {
     display: -webkit-box;
     display: -webkit-flex;
@@ -5088,7 +5136,8 @@ a {
     -webkit-justify-content: center;
        -moz-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    margin-bottom: 30px; }
     .header__logo .link {
       position: relative; }
     .header__logo h1 {
@@ -5096,31 +5145,164 @@ a {
       text-align: center;
       border-top: 1px solid #b69b67;
       text-transform: uppercase;
-      font-family: 'Playfair Display SC', serif; }
+      font-family: "Playfair Display SC", serif; }
     .header__logo .logo-span {
       float: right;
       color: #b4b4b4;
       font-size: 30px;
       text-transform: uppercase;
-      font-family: 'Ubuntu', sans-serif;
+      font-family: "Ubuntu", sans-serif;
       position: absolute;
       right: -91px;
       z-index: 1; }
   .header__lamp-logo {
     display: inline-block;
     width: 100%; }
-  .header__lamp-text__head h1 {
-    color: #b69b67;
+  .header__menu {
+    position: absolute;
+    right: 0;
+    top: 70px; }
+    .header__menu span {
+      width: 82px;
+      height: 82px;
+      display: block;
+      cursor: pointer; }
+      .header__menu span::before {
+        display: inline-block;
+        vertical-align: middle;
+        width: 82px;
+        height: 82px;
+        background: url("../images/sprites.png") -84px 0px/166px 114px no-repeat;
+        content: ""; }
+        @media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
+          .header__menu span::before {
+            background-image: url("../images/sprites@2x.png"); } }
+      .header__menu span:hover::before {
+        display: inline-block;
+        vertical-align: middle;
+        width: 82px;
+        height: 82px;
+        background: url("../images/sprites.png") 0px 0px/166px 114px no-repeat;
+        content: ""; }
+        @media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
+          .header__menu span:hover::before {
+            background-image: url("../images/sprites@2x.png"); } }
+  .header__lamp-text {
+    position: relative; }
+    .header__lamp-text__head h1 {
+      color: #b69b67;
+      font-family: "Ubuntu", sans-serif;
+      text-transform: uppercase;
+      font-weight: normal;
+      letter-spacing: 2px;
+      background: -webkit-gradient(linear, left top, right top, from(#303030), color-stop(#b69b67), to(#303030));
+      background: -webkit-linear-gradient(left, #303030, #b69b67, #303030);
+      background: -moz-linear-gradient(left, #303030, #b69b67, #303030);
+      background: -o-linear-gradient(left, #303030, #b69b67, #303030);
+      background: linear-gradient(to right, #303030, #b69b67, #303030);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+  .header__scroll-down {
+    padding-top: 155px; }
+    .header__scroll-down a {
+      color: #454545;
+      font-family: "Ubuntu", sans-serif;
+      text-transform: uppercase;
+      font-size: 20px;
+      position: relative; }
+      .header__scroll-down a span {
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        width: 24px;
+        height: 24px;
+        margin-left: -12px;
+        border-left: 2px solid #454545;
+        border-bottom: 2px solid #454545;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+         -ms-transform: rotate(-45deg);
+          -o-transform: rotate(-45deg);
+             transform: rotate(-45deg);
+        -webkit-animation: sdb04 2s infinite;
+        -moz-animation: sdb04 2s infinite;
+          -o-animation: sdb04 2s infinite;
+             animation: sdb04 2s infinite;
+        -webkit-box-sizing: border-box;
+           -moz-box-sizing: border-box;
+                box-sizing: border-box; }
+
+.services h1 {
+  font-size: 60px;
+  color: #b4b4b4;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Playfair Display SC", serif;
+  margin-bottom: 60px; }
+
+.services__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative; }
+
+.services__list ul li {
+  list-style: none;
+  margin-bottom: 75px; }
+  .services__list ul li .webdis {
+    position: absolute;
+    top: 0;
+    right: 200px;
+    color: rgba(0, 0, 0, 0.5);
+    -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px;
+    min-width: 27.5em;
+    pointer-events: none;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    z-index: 999;
+    margin-left: -5em;
+    -webkit-clip-path: inset(0 10em 10em 15em);
+            clip-path: inset(0 10em 10em 15em);
+    opacity: 0;
+    font-weight: initial;
+    padding: 1.5em;
+    -webkit-transition: all 0.25s ease-out, opacity 0.25s ease-in, margin-left 0.25s ease-out, -webkit-clip-path 0.15s ease-out;
+    transition: all 0.25s ease-out, opacity 0.25s ease-in, margin-left 0.25s ease-out, -webkit-clip-path 0.15s ease-out;
+    -o-transition: all 0.25s ease-out, opacity 0.25s ease-in, margin-left 0.25s ease-out, clip-path 0.15s ease-out;
+    -moz-transition: all 0.25s ease-out, opacity 0.25s ease-in, margin-left 0.25s ease-out, clip-path 0.15s ease-out;
+    transition: all 0.25s ease-out, opacity 0.25s ease-in, margin-left 0.25s ease-out, clip-path 0.15s ease-out;
+    transition: all 0.25s ease-out, opacity 0.25s ease-in, margin-left 0.25s ease-out, clip-path 0.15s ease-out, -webkit-clip-path 0.15s ease-out; }
+  .services__list ul li:hover .webdis {
+    opacity: 1;
+    margin-left: 0; }
+  .services__list ul li:hover .webdis {
+    pointer-events: all;
+    -webkit-clip-path: inset(0 0 0 0);
+            clip-path: inset(0 0 0 0); }
+  .services__list ul li a {
+    color: #b4b4b4;
+    font-size: 30px;
     font-family: "Ubuntu", sans-serif;
-    text-transform: uppercase;
-    font-weight: normal;
-    letter-spacing: 2px;
-    background: -webkit-gradient(linear, left top, right top, from(#303030), color-stop(#b69b67), to(#303030));
-    background: -webkit-linear-gradient(left, #303030, #b69b67, #303030);
-    background: -moz-linear-gradient(left, #303030, #b69b67, #303030);
-    background: -o-linear-gradient(left, #303030, #b69b67, #303030);
-    background: linear-gradient(to right, #303030, #b69b67, #303030);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; }
+    text-transform: uppercase; }
+
+.services__pic .webdis p {
+  margin-bottom: 20px;
+  color: #b4b4b4;
+  font-size: 20px;
+  font-family: "Ubuntu", sans-serif; }
+  .services__pic .webdis p a, .services__pic .webdis p span {
+    color: #b69b67; }
 
 /*# sourceMappingURL=main.css.map */

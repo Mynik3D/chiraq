@@ -11,7 +11,7 @@
 
 
 body{
-	font-family: 'Ubuntu', sans-serif;
+	font-family: $font-family-main;
 	background: #303030;
 }
 
@@ -26,13 +26,19 @@ a{
 }
 
 .header{
-	padding-top: 80px;
+		padding-top: 80px;
+		&__holder{
+			display: flex;
+		    flex-direction: column;
+		    align-items: center;
+		}
 
 
 	&__logo{
 			display: flex;
 			flex-direction: row;
 			justify-content: center;
+			    margin-bottom: 30px;
 
 	.link{
 		position: relative;
@@ -43,7 +49,7 @@ a{
 		text-align: center;
 		border-top: 1px solid #b69b67;
 		text-transform: uppercase;
-		font-family: 'Playfair Display SC', serif;
+		font-family: $font-family-Playfair;
 
 	
 	}
@@ -53,7 +59,7 @@ a{
 		color: #b4b4b4;
 		font-size: 30px;
 		text-transform: uppercase;
-		font-family: 'Ubuntu', sans-serif;
+		font-family: $font-family-main;
 		position: absolute;
 		right: -91px;
 		z-index: 1;
@@ -63,9 +69,34 @@ a{
 	&__lamp-logo{
 		display: inline-block;
 		width: 100%;
-}
+		}
+	&__menu{
+		position: absolute;
+		right: 0;
+		top: 70px;
+
+		span{
+			width: 82px;
+    		height: 82px;
+		    display: block;
+		    cursor: pointer;
+		    &::before{
+		    	@include sprite("menu-icon");
+
+		    	content: "";
+		    }
+		    &:hover {
+			      &::before{
+		    		@include sprite("list3");
+
+		    	content: "";
+		    }
+			  }
+		}
+	}
 
 	&__lamp-text{
+		position: relative;
 		&__head{
 			h1{
 				color: #b69b67;
@@ -76,12 +107,140 @@ a{
 				background: linear-gradient(to right, #303030,#b69b67, #303030);
 			    -webkit-background-clip: text;
 			    -webkit-text-fill-color: transparent;
+			
 
+
+			}
+		}
+	}
+
+	&__scroll-down{
+		padding-top: 155px;
+		a{
+			color: #454545;
+			font-family: $font-family-main;
+			text-transform: uppercase;
+			font-size: 20px;
+			position: relative;
+
+			span{
+				   position: absolute;
+			  top: 20px;
+			  left: 50%;
+			  width: 24px;
+			  height: 24px;
+			  margin-left: -12px;
+			  border-left: 2px solid #454545;
+			  border-bottom: 2px solid #454545;
+			  -webkit-transform: rotate(-45deg);
+			  transform: rotate(-45deg);
+			  -webkit-animation: sdb04 2s infinite;
+			  animation: sdb04 2s infinite;
+			  box-sizing: border-box;
 
 			}
 		}
 	}
 }
 
+.services{
 
+		h1{
+			font-size: 60px;
+			color: #b4b4b4;
+			text-transform: uppercase;
+			text-align: center;
+			font-family: $font-family-Playfair;
+			margin-bottom: 60px;
+		}
+
+		&__content {
+		    display: flex;
+		    flex-direction: row;
+		    position: relative;
+		    
+	     }
+
+	     &__list{
+	     	ul{
+	     		
+	     		li{
+	     			list-style: none;
+	     			margin-bottom: 75px;
+
+	     			.webdis {
+						    position: absolute;
+						    top: 0;
+						    right: 200px;
+						    color: rgba(0,0,0,0.5);
+						    border-radius: 10px;
+						    min-width: 27.5em;
+						    pointer-events: none;
+						    box-sizing: border-box;
+						    z-index: 999;
+						    margin-left: -5em;
+						    clip-path: inset(0 10em 10em 15em);
+						    opacity: 0;
+						    font-weight: initial;
+						    padding: 1.5em;
+						    transition: all 0.25s ease-out, opacity 0.25s ease-in, margin-left 0.25s ease-out, clip-path 0.15s ease-out;
+						}
+
+     			&:hover .webdis{
+				    opacity: 1;
+				    margin-left: 0;
+				}
+
+			
+				&:hover .webdis {
+				    pointer-events: all;
+				    clip-path: inset(0 0 0 0);
+				}
+
+
+	     			a{
+	     				color: #b4b4b4;
+	     				font-size: 30px;
+	     				font-family: $font-family-main;
+	     				text-transform: uppercase;
+	     			}
+	     		}
+	     	}
+	     }
+
+
+
+	     &__pic{
+	     	.webdis {
+			    // position: absolute;
+			    // top: 0;
+			    // right: 200px;
+			    // color: rgba(0,0,0,0.5);
+			    // border-radius: 10px;
+			    // min-width: 27.5em;
+			    // pointer-events: none;
+			    // box-sizing: border-box;
+			    // z-index: 999;
+			    // margin-left: -5em;
+			    // clip-path: inset(0 10em 10em 15em);
+			    // opacity: 0;
+			    // font-weight: initial;
+			    // padding: 1.5em;
+			    // transition: all 0.25s ease-out, opacity 0.25s ease-in, margin-left 0.25s ease-out, clip-path 0.15s ease-out;
+
+			  
+			    p{
+			    	margin-bottom: 20px;
+			    	color: #b4b4b4;
+			    	font-size: 20px;
+			    	font-family: $font-family-main;
+			    	a,span{
+			    		color: #b69b67;
+			    	}
+			    }
+			}
+	     }
+}
+
+ 
 
