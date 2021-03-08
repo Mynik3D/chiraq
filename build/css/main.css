@@ -5253,56 +5253,79 @@ a {
      -moz-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  position: relative; }
+  position: relative;
+  padding: 20px; }
 
-.services__list ul li {
-  list-style: none;
-  margin-bottom: 75px; }
-  .services__list ul li .webdis {
-    position: absolute;
-    top: 0;
-    right: 200px;
-    color: rgba(0, 0, 0, 0.5);
-    -webkit-border-radius: 10px;
-       -moz-border-radius: 10px;
-            border-radius: 10px;
-    min-width: 27.5em;
-    pointer-events: none;
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-    z-index: 999;
-    margin-left: -5em;
-    -webkit-clip-path: inset(0 10em 10em 15em);
-            clip-path: inset(0 10em 10em 15em);
-    opacity: 0;
-    font-weight: initial;
-    padding: 1.5em;
-    -webkit-transition: all 0.25s ease-out, opacity 0.25s ease-in, margin-left 0.25s ease-out, -webkit-clip-path 0.15s ease-out;
-    transition: all 0.25s ease-out, opacity 0.25s ease-in, margin-left 0.25s ease-out, -webkit-clip-path 0.15s ease-out;
-    -o-transition: all 0.25s ease-out, opacity 0.25s ease-in, margin-left 0.25s ease-out, clip-path 0.15s ease-out;
-    -moz-transition: all 0.25s ease-out, opacity 0.25s ease-in, margin-left 0.25s ease-out, clip-path 0.15s ease-out;
-    transition: all 0.25s ease-out, opacity 0.25s ease-in, margin-left 0.25s ease-out, clip-path 0.15s ease-out;
-    transition: all 0.25s ease-out, opacity 0.25s ease-in, margin-left 0.25s ease-out, clip-path 0.15s ease-out, -webkit-clip-path 0.15s ease-out; }
-  .services__list ul li:hover .webdis {
-    opacity: 1;
-    margin-left: 0; }
-  .services__list ul li:hover .webdis {
-    pointer-events: all;
-    -webkit-clip-path: inset(0 0 0 0);
-            clip-path: inset(0 0 0 0); }
-  .services__list ul li a {
-    color: #b4b4b4;
-    font-size: 30px;
-    font-family: "Ubuntu", sans-serif;
-    text-transform: uppercase; }
-
-.services__pic .webdis p {
-  margin-bottom: 20px;
-  color: #b4b4b4;
-  font-size: 20px;
-  font-family: "Ubuntu", sans-serif; }
-  .services__pic .webdis p a, .services__pic .webdis p span {
-    color: #b69b67; }
+.services__list ul {
+  width: 533px; }
+  .services__list ul li {
+    list-style: none;
+    margin-bottom: 75px; }
+    .services__list ul li .webdis {
+      position: absolute;
+      top: 0;
+      right: 200px;
+      color: rgba(0, 0, 0, 0.5);
+      -webkit-border-radius: 10px;
+         -moz-border-radius: 10px;
+              border-radius: 10px;
+      min-width: 27.5em;
+      pointer-events: none;
+      -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+              box-sizing: border-box;
+      z-index: 999;
+      margin-left: -5em;
+      opacity: 0;
+      font-weight: initial;
+      -webkit-transition: all 0.25s ease-out, opacity 0.25s ease-in, margin-left 0.25s ease-out, -webkit-clip-path 0.15s ease-out;
+      transition: all 0.25s ease-out, opacity 0.25s ease-in, margin-left 0.25s ease-out, -webkit-clip-path 0.15s ease-out;
+      -o-transition: all 0.25s ease-out, opacity 0.25s ease-in, margin-left 0.25s ease-out, clip-path 0.15s ease-out;
+      -moz-transition: all 0.25s ease-out, opacity 0.25s ease-in, margin-left 0.25s ease-out, clip-path 0.15s ease-out;
+      transition: all 0.25s ease-out, opacity 0.25s ease-in, margin-left 0.25s ease-out, clip-path 0.15s ease-out;
+      transition: all 0.25s ease-out, opacity 0.25s ease-in, margin-left 0.25s ease-out, clip-path 0.15s ease-out, -webkit-clip-path 0.15s ease-out; }
+      .services__list ul li .webdis p {
+        margin-bottom: 20px;
+        color: #b4b4b4;
+        font-size: 20px;
+        font-family: "Ubuntu", sans-serif; }
+        .services__list ul li .webdis p a, .services__list ul li .webdis p span {
+          color: #b69b67;
+          font-size: 20px;
+          text-transform: initial;
+          border: none; }
+    .services__list ul li .photography-block {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -webkit-flex-direction: column-reverse;
+         -moz-box-orient: vertical;
+         -moz-box-direction: reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse; }
+    .services__list ul li:hover .webdis {
+      opacity: 1;
+      margin-left: 0; }
+    .services__list ul li:hover .webdis {
+      pointer-events: all;
+      -webkit-clip-path: inset(0 0 0 0);
+              clip-path: inset(0 0 0 0); }
+    .services__list ul li:hover {
+      border-bottom: 1px solid #454545; }
+    .services__list ul li a {
+      color: #b4b4b4;
+      font-size: 30px;
+      font-family: "Ubuntu", sans-serif;
+      text-transform: uppercase; }
+    .services__list ul li:hover a {
+      color: #b69b67;
+      text-align: center;
+      border-top: 1px solid #b69b67;
+      text-transform: uppercase;
+      font-size: 60px; }
 
 /*# sourceMappingURL=main.css.map */
